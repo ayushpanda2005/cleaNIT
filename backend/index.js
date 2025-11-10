@@ -12,7 +12,7 @@ import roboflowRoutes from "./src/routes/robloxflowRoutes.js";
 
 const app = express();
 
-app.use(cors());
+app.use(cors({origin:'*'}));
 app.use(
   fileUpload({
     useTempFiles: false,
